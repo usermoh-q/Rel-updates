@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elya – Privacy policy</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>body{font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:0 auto;padding:24px 16px;color:#0f172a}a{color:#17705F}
+h1{font-size:28px}h2{font-size:19px;margin-top:28px}@media(prefers-color-scheme:dark){body{background:#0B1020;color:#E9EEF8}a{color:#5CC9A7}}</style></head>
+<body>
+<h1>Elya – Privacy policy</h1>
+<p>Last updated: 9 November 2026</p>
+<p>This policy covers the Elya app for Android and iPhone, made by Veranode ("we"). Elya is a remote control for a home automation system. It talks only to a "home relay": a small program that the owner of the home runs on their own computer at home, which controls the home's Smart Bus G4 and KNX devices.</p>
+<h2>What the app collects</h2>
+<p>Nothing is collected by us. The app has no account with us, no analytics, no advertising, no crash reporting and no tracking of any kind. We run no servers that receive data from the app.</p>
+<h2>What is stored on your phone</h2>
+<ul>
+<li>The homes you add: a name and the address (or addresses) of each home relay.</li>
+<li>Your sign-in key for each home, which the relay gives the app after you sign in with your name and password or scan a QR code from the owner. The app keeps it in the phone's secure storage (the Android Keystore or the iPhone Keychain).</li>
+<li>Small settings, such as which page you had open and whether the app lock is on, and the home's internet address as your relay last reported it (used only by "Test the away connection").</li>
+</ul>
+<p>Removing a home in the app deletes its address and sign-in key from the phone. Deleting the app deletes everything.</p>
+<h2>What is sent, and to whom</h2>
+<p>The app sends your commands (for example "turn the kitchen light on"), your user name and password when you sign in, and requests for the state of your devices, only to the home relay addresses you entered. That relay belongs to the owner of the home, not to us.</p>
+<p>"Test the away connection" (Edit a home) looks up your home's away address with the phone's normal name lookup and connects to it, exactly as the app does when you are away. No outside test service or other server is used.</p>
+<p>The relay keeps its own records, under the control of the owner of the home: the list of people allowed to use the home, the phones signed in, and an activity log of what was switched and by whom. Ask the owner of the home if you want your user removed.</p>
+<h2>Support reports: only when you choose to send one</h2>
+<p>If you ask for help, the app can make a support report (More, Support and about, "Send a support report"). It is made only when you tap that button, and the app first shows you what is inside it. The report holds technical facts about the app and your relay (versions, connection state, recent error messages, the number of devices and systems) to help find a problem. Passwords, sign-in keys, security keys and license signatures are never put in it, and people's names are removed. The app does not send the report itself: your phone's share sheet opens, and you choose whether to send it, to whom and how (for example by e-mail to your installer or to us). We use a report we receive only to answer your question, and delete it when the problem is solved.</p>
+<h2>Permissions</h2>
+<p>On iPhone the app asks for "Local Network" access, which it needs to find the home relay on your Wi-Fi and to reach it. When you tap "+ Add", the app looks on your Wi-Fi for Elya relays (Bonjour). The search stays on your home network and stops when you leave that screen; nothing is sent anywhere else.</p>
+<p>The app asks for the camera only when you choose "Scan QR code", to read the QR code your home relay shows for adding a phone. The picture is read on the phone and is never saved or sent anywhere. If you do not allow the camera, you can type the code instead.</p>
+<p>If you turn on the app lock (it is off unless you turn it on), the app asks the phone to check your fingerprint, face (Face ID) or the phone's PIN, pattern or passcode when it opens. The phone does this check itself: the app only learns whether it succeeded, and never sees or stores your fingerprint or face.</p>
+<p>On Android the app also uses the phone's normal network permissions (to see whether you are on Wi-Fi and to find the relay on it); Android grants these without asking.</p>
+<p>The app does not use your location, microphone, contacts or photos.</p>
+<h2>Security</h2>
+<p>The app always talks to the home relay over an encrypted connection (HTTPS), at home and away. The relay makes its own security key; the app remembers that key when you add the home (from the relay's QR code, from the search on your Wi-Fi, or after showing you the relay's safety code at home) and from then on talks only to a relay with that key. If the key ever changes, the app stops and warns you before sending anything, so your password and sign-in are never sent to another computer. From outside the home, the relay is reached through the home owner's own router (port forwarding) or private network (for example Tailscale); nothing goes through our servers.</p>
+<p>You sign in only with your name and password, or with a one-time QR code that the owner of the home shows on the relay. There are no sign-in links and no default passwords; the first owner password can only be set from the home network, with a code shown on the relay computer.</p>
+<h2>Children</h2>
+<p>The app is meant for adults who run their home's system; it is not directed at children and collects no personal data from anyone.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version is published at this address with a new date.</p>
+<h2>Contact</h2>
+<p>Veranode. Questions about this policy or the app: <a href="mailto:sm.developer.services@gmail.com">sm.developer.services@gmail.com</a></p>
+<p><small>Smart Bus G4 and KNX are trademarks of their respective owners. Elya is an independent product by Veranode and is not affiliated with them.</small></p>
+</body></html>
